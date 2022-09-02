@@ -1,0 +1,51 @@
+@import url("../main.css");
+@import url("../products/products.css");
+
+a:visited {
+    color:black;
+  }
+.container{
+    background-image: none;
+}
+.navbar{
+    color: var(--mainBlack);
+}
+.cartProduct{
+  
+        width: 90vw;
+        margin: 0 auto;
+        padding: 3rem;
+        display: flex;
+}
+.cartProduct img{
+    width: 477px;
+    height: 311px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.cartProduct h1{
+    
+    margin-bottom: 0.25rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    color: var(--clr-grey-5);
+}
+.banner-btn12 {
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    
+    background:transparent;
+    color: white ;
+    border: 1px solid var(--mainWhite);
+    transition: var(--mainTransition);
+    cursor: pointer;
+    opacity: .7;
+    background-color: var(--clr-primary-5);
+  }
+   
+  .banner-btn12:hover {
+    border-radius: 1rem;
+    opacity: 1;
+    
+  }

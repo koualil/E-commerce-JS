@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>products</title>
+  <link rel="stylesheet" href="products.css">
+  <link rel="stylesheet" href="../modal/modal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul class="list">
+                <li><a href="../index.html">home</a></li>
+                <li>products</li>
+                <li>about </li>
+ 
+            </ul>
+            <div class="nav-icon">
+                <img src="../images/logo.svg" alt="" srcset="">
+            </div>
+            <div class="btnShop">
+                <div class="cercle">0</div>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </nav>
+        <div class="modale-container">
+            <!-- q s d f  -->
+            <div class="modale">
+                    <i class="fas fa-times ferme"></i>
+
+                <h1 >your bag</h1>
+                <div class="divCart">
+                    <!-- js cart -->
+                </div>
+                <footer class="cart_footer">
+                    <h3 class="cart-total text-slanted">Total :  $ <span class="totalPrice">0.00</span></h3>
+                </footer>
+                 
+                 
+            </div>
+        </div>
+        <div class="header">
+            <p>home / products</p>
+        </div>
+        <div class="items-carts">
+            <div class="sidBare">
+                <input type="text" class="search" placeholder="Search...">
+                <h2>Company</h2>
+                
+                <p>all</p>
+                <p>ikea</p>
+                <p>macros</p>
+                <p>caressa</p>
+                <p>liddy</p>
+                <h2>price</h2>
+                 <form action="">
+                     <input type="range" class="price-filter" min="0" value="50" max="100" />
+                 </form>
+                <h3 >value : $ <span class="priceInput">50</span> 
+                </h3>
+            </div>
+            <div class="cart">
+
+            </div>
+        </div>
+        </div>
+        <div class="page-loading" >
+            <h2>Loading...</h2>
+         </div>
+ <script src="../modal/modal.js"></script>
+ <script type=module src="./prd.js"></script>
+  
+ <script>
+     const btnInput = document.querySelector(".price-filter");
+     btnInput.addEventListener("input",
+       ()=>{
+          document.querySelector(".priceInput").innerText=btnInput.value;
+        }) 
+                        
+ </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+@import url("../main.css");
+a:visited {
+    color:black;
+  }
+.container{
+    background:  white  ;
+    min-height: 100vh;
+}
+.navbar{
+    color: black;
+}
+.header{
+    min-height: 20vh;
+    display: grid;
+    align-items: center;
+    background: var(--clr-grey-10);
+    color: var(--clr-grey-5);
+    padding-left: 2rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: .3rem;
+}
+.sidBare{
+    max-width: 300px;
+    height: 80vh;  
+    padding: 2rem;
+    position: sticky;
+    top: .3rem;
+}
+.sidBare input{
+    background: var(--clr-grey-10);
+    padding: 4px;
+    border-color: transparent;
+    letter-spacing: var(--spacing);
+    border-radius: 24px;
+}
+.sidBare p {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    color: var(--clr-grey-5);
+    margin-top: .5rem;
+    text-transform: capitalize;
+}
+.sidBare  h2{
+    margin-top: 2rem;
+}
+.items-carts{
+        display: flex;
+        padding: 2rem; 
+}
+.cart{
+    margin-top: 2rem;
+}
+

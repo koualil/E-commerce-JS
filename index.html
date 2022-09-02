@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> home</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./modal/modal.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <button class="toggle-nav">
+                <i class="fas fa-bars"></i>
+              </button>
+            <ul class="list">
+                <li>home</li>
+                <li><a href="./products/products.html">products</a></li>
+                <li>about </li>
+ 
+            </ul>
+            <div class="nav-icon">
+                <img src="./images/logo.svg" alt="" srcset="">
+            </div>
+            <div class="btnShop">
+                <div class="cercle">0</div>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </nav>
+        <div class="modale-container">
+            <!-- q s d f  -->
+            <div class="modale">
+                    <i class="fas fa-times ferme"></i>
+
+                <h1 >your bag</h1>
+                <div class="divCart">
+                    <!-- js cart -->
+                </div>
+                <footer class="cart_footer">
+                    <h3 class="cart-total text-slanted">Total :  $ <span class="totalPrice">0.00</span></h3>
+                </footer>       
+            </div>
+        </div>
+        <section class="banner">
+            <h2 class="text_family">rest, relax, unwind</h2>
+            <h3>Embrace your choices - we do</h3>
+                <a href="./products/products.html">
+                    <button class="banner-btn">show now</button>
+                </a> 
+        </section>
+    </div>
+    <div>
+            <h1 class="title"><span style="color: var(--primaryColor);">/</span>featured</h1>
+        <section class="cart section_center">
+            <!-- js -->
+        </section>
+        <a class="centreDiv" href="./products/products.html">
+            <button class="banner-btn11" style="background: var(--primaryColor) ; margin:3rem 0;">all products</button>
+        </a>
+
+    </div>
+
+ <script   src="./modal/modal.js"></script>
+ <script type="module" src="./app.js"></script>
+</body>
+</html>
