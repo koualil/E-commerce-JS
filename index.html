@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> home</title>
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./responsive.css">
   <link rel="stylesheet" href="./modal/modal.css">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,6 +18,35 @@
             <button class="toggle-nav">
                 <i class="fas fa-bars"></i>
               </button>
+              <div class="sidebar-overlay">
+                <aside class="sidebar">
+                  <!-- close -->
+                  <button class="sidebar-close">
+                    <i class="fas fa-times"></i>
+                  </button>
+                  <!-- links -->
+                  <ul class="sidebar-links">
+                    <li>
+                      <a href="./index.html" class="sidebar-link">
+                        <i class="fas fa-home fa-fw"></i>
+                        home
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./products/products.html" class="sidebar-link">
+                        <i class="fas fa-couch fa-fw"></i>
+                        products
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sidebar-link">
+                        <i class="fas fa-book fa-fw"></i>
+                        about
+                      </a>
+                    </li>
+                  </ul>
+                </aside>
+              </div>
             <ul class="list">
                 <li>home</li>
                 <li><a href="./products/products.html">products</a></li>
@@ -58,13 +88,18 @@
         <section class="cart section_center">
             <!-- js -->
         </section>
-        <a class="centreDiv" href="./products/products.html">
-            <button class="banner-btn11" style="background: var(--primaryColor) ; margin:3rem 0;">all products</button>
-        </a>
+        <div class="centreDiv">
+            <button class="banner-btn11" style="background: var(--primaryColor) ; margin:3rem 0;">
+                <a class="" href="./products/products.html">
+                all products</a></button>
+
+        </div>
+        
 
     </div>
 
  <script   src="./modal/modal.js"></script>
  <script type="module" src="./app.js"></script>
+ <script src="./responsive.js"></script>
 </body>
 </html>

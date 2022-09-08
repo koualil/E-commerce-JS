@@ -13,4 +13,4 @@ ui.getBagButton('.btnBuy');
 ui.setupApp(LocalStorage.getAllCart(),'.banner-btn12');
  
 
-document.querySelector(".textProduct").innerText = `home / ${product.title}`;
+document.querySelector(".textPro").innerText = ` ${product.title}`;

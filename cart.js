@@ -8,8 +8,9 @@ var  Cart = JSON.parse(localStorage.getItem("cart"));
 // get products
 class Products{
     async getProducts(){
+    const url=window.location.host;
         try{//
-             const result =await fetch("http://localhost:5500/products.json")
+             const result =await fetch(` http://${url}/products.json`)
              const data = await result.json(); 
              let products = data.items.map(data=>{
                                     const {title,Company,price} =data.fields;
@@ -240,7 +241,8 @@ class Products{
                 while(parent.firstChild) {
                     parent.removeChild(parent.firstChild);
                 } 
-                    product = Cart.filter(item=>item.title.indexOf(e.target.value.trim())>-1);
+                const value= e.target.value.toLowerCase()
+                    product = Cart.filter(item=>item.title.indexOf(value.trim())>-1);
                     this.displayCart(product);
                     this.getBagButton('.banner-btn1');
             
@@ -271,8 +273,9 @@ class Products{
                         <h1>${product.title}</h1>
                         <h3>${product.Company}</h3>
                         <h4 class=''>$ ${product.price}</h4>
+                        <p style="color: var(--clr-grey-5);">Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge</p>
+                        <hr/><br>
                         <button class="btnBuy banner-btn12" data-id=${product.id}>add cart</button>
-                        <p>description</p>
                         </div>`;
         }
          

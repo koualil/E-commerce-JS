@@ -49,3 +49,17 @@ a:visited {
     opacity: 1;
     
   }
+
+
+  @media screen and (max-width: 392px){
+
+  .cartProduct img {
+    width: 100%;
+  }
+  .cartProduct{
+    padding: 1rem;
+    width: 100vw;
+    display: block;
+  }
+
+}

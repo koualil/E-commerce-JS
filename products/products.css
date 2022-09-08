@@ -44,11 +44,26 @@ a:visited {
 .sidBare  h2{
     margin-top: 2rem;
 }
-.items-carts{
-        display: flex;
-        padding: 2rem; 
-}
+
 .cart{
     margin-top: 2rem;
 }
+
+@media screen and (min-width: 766px){
+    .items-carts{
+        display: flex;
+        padding: 2rem; 
+  }
+
+}
+@media screen and (max-width: 570px){
+    .cart {
+        padding: 0.3rem;
+      }
+      .sidBare{
+        position: initial;
+      }
+
+}
+
 
