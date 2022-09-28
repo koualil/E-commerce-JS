@@ -1,5 +1,5 @@
 
-{
+export default Data=()=>{
   "items": [
     {
       "sys": { "id": "1" },
