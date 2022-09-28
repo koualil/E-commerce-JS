@@ -1,5 +1,5 @@
 import Loading from './loading.js';
-import data from './products.json';console.log(data)
+import Data from './products.json';console.log(data)
 const cart = document.querySelector(".cart");
 const btnModale = document.querySelector(".divCart");
 
@@ -12,7 +12,7 @@ class Products{
         try{//
 //              const result =await fetch(` http://${url}/products.json`)
 //              const data = await result.json(); 
-             let products = data.items.map(data=>{
+             let products = Data.items.map(data=>{
                                     const {title,Company,price} =data.fields;
                                     const id = data.sys.id
                                     const image = data.fields.image.fields.file.url;
