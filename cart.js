@@ -1,5 +1,5 @@
 import Loading from './loading.js';
-import Data from './products.json';console.log(data)
+import Data from './products.js';console.log(data)
 const cart = document.querySelector(".cart");
 const btnModale = document.querySelector(".divCart");
 
