@@ -1,5 +1,5 @@
 import Loading from './loading.js';
-
+import data from './products.json';
 const cart = document.querySelector(".cart");
 const btnModale = document.querySelector(".divCart");
 
@@ -10,8 +10,8 @@ class Products{
     async getProducts(){
     const url=window.location.host;
         try{//
-             const result =await fetch(` http://${url}/products.json`)
-             const data = await result.json(); 
+//              const result =await fetch(` http://${url}/products.json`)
+//              const data = await result.json(); 
              let products = data.items.map(data=>{
                                     const {title,Company,price} =data.fields;
                                     const id = data.sys.id
