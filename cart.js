@@ -1,5 +1,5 @@
 import Loading from './loading.js';
-import data from './products.json';
+import data from './products.json';console.log(data)
 const cart = document.querySelector(".cart");
 const btnModale = document.querySelector(".divCart");
 
@@ -7,7 +7,7 @@ const btnModale = document.querySelector(".divCart");
 var  Cart = JSON.parse(localStorage.getItem("cart"));
 // get products
 class Products{
-    async getProducts(){
+     getProducts(){
     const url=window.location.host;
         try{//
 //              const result =await fetch(` http://${url}/products.json`)
